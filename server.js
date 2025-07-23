@@ -111,11 +111,11 @@ app.post('/api/comment/:id', async (req, res) => {
 });
 
 // Fallback to serve index.html
-app.get('*', (req, res) => {
+app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 
 // --- START SERVER ---
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
