@@ -3,7 +3,7 @@ document.getElementById("submitBtn").addEventListener("click", async () => {
   if (!text) return;
 
   try {
-    const res = await fetch("/thoughts", {
+    const res = await fetch("/api/thoughts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ text })
