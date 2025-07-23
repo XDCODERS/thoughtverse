@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background-color: #fff;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #5a67d8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #434190;
+}
+
+.thought {
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85em;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.thought p {
+  margin: 0 0 10px;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  color: #5a67d8;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.actions button:hover {
+  text-decoration: underline;
+}
+
+.comment-box {
+  margin-top: 10px;
+}
+
+.comment-box input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+.comment-list {
+  padding-left: 15px;
+  font-size: 0.85em;
+  color: #444;
+}

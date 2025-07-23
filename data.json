@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1753248331227,
+    "userHash": "5b58ca3d0a",
+    "rawInfo": {
+      "ip": "::ffff:127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "platform": "Win32",
+      "language": "en-US",
+      "screen": {
+        "width": 1536,
+        "height": 864
+      },
+      "battery": {
+        "level": null,
+        "charging": null
+      }
+    },
+    "thought": "lets make",
+    "time": "23/7/2025, 10:55:31 am"
+  },
+  {
+    "id": 1753200639468,
+    "userHash": "5b58ca3d0a",
+    "rawInfo": {
+      "ip": "::ffff:127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0",
+      "platform": "Win32",
+      "language": "en-US",
+      "screen": {
+        "width": 1536,
+        "height": 864
+      },
+      "battery": {
+        "level": null,
+        "charging": null
+      }
+    },
+    "thought": "hey",
+    "time": "22/7/2025, 9:40:39 pm"
+  }
+]

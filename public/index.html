@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ThoughtVerse</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f5f5f5; }
+    #thoughtInput { width: 100%; padding: 1rem; margin-bottom: 1rem; font-size: 1rem; }
+    #submitBtn { padding: 0.5rem 1rem; font-size: 1rem; }
+    .thought { background: white; padding: 1rem; margin-bottom: 1rem; border-radius: 5px; }
+    .upvoteBtn { margin-top: 0.5rem; cursor: pointer; color: #007bff; border: none; background: none; }
+  </style>
+</head>
+<body>
+  <h1>ThoughtVerse</h1>
+  <textarea id="thoughtInput" rows="3" placeholder="What's on your mind?"></textarea><br>
+  <button id="submitBtn">Post</button>
+
+  <div id="thoughtsContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
