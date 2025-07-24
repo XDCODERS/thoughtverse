@@ -1,107 +1,87 @@
 body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
   margin: 0;
-  padding: 0;
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-}
-
-.container {
-  max-width: 700px;
-  margin: auto;
   padding: 20px;
-  background-color: #fff;
-  margin-top: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  color: #1da1f2;
 }
 
 form {
+  max-width: 600px;
+  margin: 20px auto;
   display: flex;
+  flex-direction: column;
   gap: 10px;
-  margin-bottom: 20px;
 }
 
-input[type="text"] {
-  flex: 1;
-  padding: 10px;
+textarea {
+  padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
+  resize: vertical;
+  font-size: 16px;
+  min-height: 80px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #5a67d8;
+  background-color: #1da1f2;
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 button:hover {
-  background-color: #434190;
+  background-color: #0c8ddf;
 }
 
-.thought {
-  padding: 15px;
-  margin-bottom: 15px;
-  background-color: #fdfdfd;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+.thought-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  margin: 15px auto;
+  max-width: 600px;
+  transition: box-shadow 0.3s;
+}
+
+.thought-card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.thought-text {
+  font-size: 18px;
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .meta {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85em;
-  color: #777;
-  margin-bottom: 8px;
-}
-
-.thought p {
-  margin: 0 0 10px;
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 10px;
 }
 
 .actions {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 0.9em;
-  color: #555;
+  gap: 20px;
+  font-size: 16px;
 }
 
-.actions button {
-  background: none;
-  border: none;
-  color: #5a67d8;
+.actions span {
   cursor: pointer;
-  padding: 4px;
+  user-select: none;
+  color: #555;
+  transition: color 0.2s;
 }
 
-.actions button:hover {
-  text-decoration: underline;
-}
-
-.comment-box {
-  margin-top: 10px;
-}
-
-.comment-box input {
-  width: 100%;
-  padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 0.9em;
-  margin-bottom: 5px;
-}
-
-.comment-list {
-  padding-left: 15px;
-  font-size: 0.85em;
-  color: #444;
+.actions span:hover {
+  color: #1da1f2;
 }

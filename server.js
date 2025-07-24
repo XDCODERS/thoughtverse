@@ -110,6 +110,17 @@ app.post('/api/comment/:id', async (req, res) => {
   }
 });
 
+// Delete a thought
+app.delete('/api/thoughts/:id', async (req, res) => {
+  try {
+    const deleted = await Thought.findByIdAndDelete(req.params.id);
+    if (!deleted) return res.status(404).json({ error: 'Not found' });
+    res.json({ message: 'Thought deleted' });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to delete' });
+  }
+});
+
 // Fallback to serve index.html
 app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
