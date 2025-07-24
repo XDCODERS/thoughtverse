@@ -1,87 +1,114 @@
+/* Base reset and layout */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f1f5f9;
   margin: 0;
-  padding: 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
-  text-align: center;
-  color: #1da1f2;
+  color: #0ea5e9;
+  margin: 30px 0 20px;
 }
 
+/* Thought input area */
 form {
+  width: 90%;
   max-width: 600px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
 }
 
 textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  width: 100%;
   resize: vertical;
-  font-size: 16px;
   min-height: 80px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 button {
-  background-color: #1da1f2;
+  background-color: #0ea5e9;
   color: white;
   border: none;
-  border-radius: 20px;
   padding: 10px 20px;
-  font-size: 16px;
+  margin-top: 10px;
+  border-radius: 20px;
   cursor: pointer;
-  align-self: flex-end;
+  font-weight: bold;
 }
 
 button:hover {
-  background-color: #0c8ddf;
+  background-color: #0284c7;
 }
 
-.thought-card {
+/* Thought box */
+.thought {
+  width: 90%;
+  max-width: 600px;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 15px 20px;
-  margin: 15px auto;
-  max-width: 600px;
-  transition: box-shadow 0.3s;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
 }
 
-.thought-card:hover {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.thought-text {
-  font-size: 18px;
-  margin-bottom: 8px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-
-.meta {
-  font-size: 12px;
-  color: #888;
+.thought-content {
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
+/* Like and delete buttons */
 .actions {
   display: flex;
-  gap: 20px;
-  font-size: 16px;
+  gap: 10px;
+  align-items: center;
 }
 
-.actions span {
-  cursor: pointer;
-  user-select: none;
-  color: #555;
-  transition: color 0.2s;
+.actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.actions span:hover {
-  color: #1da1f2;
+/* Comments */
+.comment-section {
+  margin-top: 10px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 10px;
+}
+
+.comment {
+  font-size: 15px;
+  background: #f8fafc;
+  padding: 6px 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+}
+
+/* Comment input */
+.comment-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.comment-form input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+.comment-form button {
+  padding: 8px 16px;
 }
